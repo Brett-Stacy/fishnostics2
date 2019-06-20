@@ -21,4 +21,3 @@ implemented generate these automatically)}
 \description{
 Process single series of Monte Carlo outputs
 }
-

@@ -25,4 +25,3 @@ file_name must be supplied) if TRUE calls \code{\link{save_plot}}}
 \description{
 Generic parameters for plotting
 }
-

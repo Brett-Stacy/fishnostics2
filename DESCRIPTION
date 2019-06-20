@@ -18,4 +18,4 @@ Suggests:
 VignetteBuilder: knitr
 LazyData: true
 License: GPL-3
-RoxygenNote: 5.0.1
+RoxygenNote: 6.1.1

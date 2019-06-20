@@ -15,4 +15,3 @@ save_plot(file_name, file_type, path)
 \description{
 Save a plot
 }
-

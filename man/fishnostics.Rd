@@ -16,4 +16,3 @@ ggplot2, however, currently base and lattice are used.
 
 Need to generate some example datsets to use for package examples
 }
-
