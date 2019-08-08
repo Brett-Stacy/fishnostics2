@@ -23,7 +23,7 @@ plot_ts_uncertainty <- function(d,
 ){
   ## set the graphical parameters for the plot
   ##* I've removed 'windows' from graph_pars because it is a function
-  graph_pars <- par(graph_pars)
+  # graph_pars <- par(graph_pars) # BS 8/8/19: commented out 
   ## check the probabilities
   if(length(probs) != 3) stop("probs must be a vector of length 3")
   if(any(probs>1) | any(probs<0)) stop("all probs must be in [0,1]")
@@ -64,6 +64,6 @@ plot_ts_uncertainty <- function(d,
   ## if save turn off graphics device
   if(save) dev.off()
   ## at the end of plotting we reset the graphical parameters
-  par(graph_pars)
+  # par(graph_pars) # BS 8/8/19: commented out 
 }
 
