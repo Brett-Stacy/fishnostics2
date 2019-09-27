@@ -50,7 +50,7 @@ plot_ts_uncertainty <- function(d,
   plot(mid ~ xs, type = "l", ylab = ylab, xlab = xlab, main = main,
        # ylim = c(0, 1.05*max(upr)),
        if(!exists("ylim")) ylim = c(0, 1.05*max(upr)),
-       ylim = c(0, 1.05*max(c(upr, upr2))),
+       # ylim = c(0, 1.05*max(c(upr, upr2))),
        las = 2,...)
   ## how does the polygon function work
   polygon(x=c(xs,rev(xs)),y=c(upr, rev(lwr)),col="lightgrey",border="lightgrey")
