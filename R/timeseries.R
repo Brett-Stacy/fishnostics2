@@ -48,7 +48,9 @@ plot_ts_uncertainty <- function(d,
   #* increase the number of tick marks
   ## this gets overwritten by the polygon
   plot(mid ~ xs, type = "l", ylab = ylab, xlab = xlab, main = main,
-       ylim = c(0, 1.05*max(upr)), las = 2,...)
+       # ylim = c(0, 1.05*max(upr)),
+       if(!exists(ylim)) ylim = c(0, 1.05*max(upr)),
+       las = 2,...)
   ## how does the polygon function work
   polygon(x=c(xs,rev(xs)),y=c(upr, rev(lwr)),col="lightgrey",border="lightgrey")
   #abline(h=1,col="darkgrey",lty=3)
